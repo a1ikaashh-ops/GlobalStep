@@ -28,7 +28,7 @@ export default function Cooperation(){
         <h1>Сотрудничество</h1>
         <p className="small">GlobalStep открыт к сотрудничеству с организациями, университетами и программами. Ниже — контакты и форма для предложений.</p>
 
-        <div style={{display:'grid',gridTemplateColumns:'1fr 420px',gap:24,marginTop:18}}>
+  <div className="cooperation-grid" style={{marginTop:18}}>
           <div>
             <h3>Как предложить программу</h3>
             <ol className="small">
