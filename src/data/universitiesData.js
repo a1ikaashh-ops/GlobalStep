@@ -1,0 +1,95 @@
+// universitiesData.js — расширённые данные по университетам (строки на русском языке)
+const universitiesData = [
+  {
+    id: 1,
+    name: 'Торонтовский университет',
+    slug: 'university-of-toronto',
+    image: 'https://picsum.photos/seed/toronto/1200/640',
+    logo: 'https://picsum.photos/seed/torontologo/200/200',
+    moments: ['https://picsum.photos/seed/tor1/400/260','https://picsum.photos/seed/tor2/400/260'],
+    country: 'Канада',
+    description: 'Один из ведущих исследовательских университетов Канады с сильными программами в инженерии, бизнесе и медицине. Город Торонто — многонациональный центр с отличными возможностями для студентов.',
+    tuitionFees: '$30,000 - $50,000 / год',
+    popularPrograms: ['Компьютерные науки', 'Data Science', 'Инженерия'],
+    admissionRequirements: 'IELTS 7.0, GPA 3.5, мотивационное письмо',
+    officialWebsite: 'https://www.utoronto.ca',
+    socialMedia: { instagram: 'https://instagram.com/uoft', telegram: 'https://t.me/uoft_official' }
+  },
+  {
+    id: 2,
+    name: 'Оксфордский университет',
+    slug: 'university-of-oxford',
+    image: 'https://picsum.photos/seed/oxford/1200/640',
+    logo: 'https://picsum.photos/seed/oxfordlogo2/200/200',
+    moments: ['https://picsum.photos/seed/ox1/400/260','https://picsum.photos/seed/ox2/400/260'],
+    country: 'Великобритания',
+    description: 'Оксфорд — исторический университет с мировым именем. Сильная академическая среда, маленькие семинары и доступ к исключительным исследовательским ресурсам.',
+    tuitionFees: '£25,000 - £65,000 / год',
+    popularPrograms: ['MBA', 'Философия', 'Право'],
+    admissionRequirements: 'IELTS 7.5, GPA 3.3, рекомендации',
+    officialWebsite: 'https://www.ox.ac.uk',
+    socialMedia: { instagram: 'https://instagram.com/oxford_uni', telegram: null }
+  },
+  {
+    id: 3,
+    name: 'Мельбурнский университет',
+    slug: 'university-of-melbourne',
+    image: 'https://picsum.photos/seed/melb/1200/640',
+    logo: 'https://picsum.photos/seed/melblogo/200/200',
+    moments: ['https://picsum.photos/seed/mel1/400/260'],
+    country: 'Австралия',
+    description: 'Крупный исследовательский университет с широкой сетью партнерств в Азии и Тихоокеанском регионе. Сильные программы в гуманитарных и естественных науках.',
+    tuitionFees: 'AUD 30,000 - AUD 45,000 / год',
+    popularPrograms: ['Инженерия', 'Гуманитарные науки', 'Медицина'],
+    admissionRequirements: 'IELTS 6.5, GPA 3.0',
+    officialWebsite: 'https://www.unimelb.edu.au',
+    socialMedia: { instagram: 'https://instagram.com/unimelb', telegram: null }
+  },
+  {
+    id: 4,
+    name: 'Мюнхенский технический университет (TUM)',
+    slug: 'technical-university-of-munich',
+    image: 'https://picsum.photos/seed/tum/1200/640',
+    logo: 'https://picsum.photos/seed/tumlogo/200/200',
+    moments: ['https://picsum.photos/seed/tum1/400/260'],
+    country: 'Германия',
+    description: 'TUM известен своими инженерными и техническими школами. Предлагает программы с тесной связью с промышленностью и исследовательскими центрами.',
+    tuitionFees: '€0 - €15,000 / год (зависит от программы)',
+    popularPrograms: ['Механическая инженерия', 'Компьютерные науки'],
+    admissionRequirements: 'TOEFL 90, GPA 3.2, рекомендации',
+    officialWebsite: 'https://www.tum.de',
+    socialMedia: { instagram: 'https://instagram.com/tumofficial', telegram: null }
+  },
+  {
+    id: 5,
+    name: 'Национальный университет Сингапура (NUS)',
+    slug: 'national-university-of-singapore',
+    image: 'https://picsum.photos/seed/nus/1200/640',
+    logo: 'https://picsum.photos/seed/nuslogo/200/200',
+    moments: ['https://picsum.photos/seed/nus1/400/260'],
+    country: 'Сингапур',
+    description: 'Ведущий азиатский университет с сильными программами в области технологий, бизнеса и городской политики. Отличные связи с работодателями в регионе.',
+    tuitionFees: 'SGD 20,000 - SGD 40,000 / год',
+    popularPrograms: ['Экономика', 'Компьютерные науки', 'Бизнес'],
+    admissionRequirements: 'IELTS 6.5, GPA 3.4',
+    officialWebsite: 'https://www.nus.edu.sg',
+    socialMedia: { instagram: 'https://instagram.com/nus_sg', telegram: null }
+  },
+  {
+    id: 6,
+    name: 'Амстердамский университет (UvA)',
+    slug: 'university-of-amsterdam',
+    image: 'https://picsum.photos/seed/uva/1200/640',
+    logo: 'https://picsum.photos/seed/valogo/200/200',
+    moments: ['https://picsum.photos/seed/uva1/400/260'],
+    country: 'Нидерланды',
+    description: 'Университет Амстердама предлагает качественные программы на английском языке, сильную международную среду и удобное расположение в европейском культурном центре.',
+    tuitionFees: '€8,000 - €15,000 / год',
+    popularPrograms: ['Философия', 'Социальные науки'],
+    admissionRequirements: 'IELTS 6.5, портфолио/эссе',
+    officialWebsite: 'https://www.uva.nl',
+    socialMedia: { instagram: 'https://instagram.com/universityofamsterdam', telegram: null }
+  }
+]
+
+export default universitiesData
