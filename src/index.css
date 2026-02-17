@@ -166,3 +166,33 @@ a{color:inherit;text-decoration:none}
 .form-group{display:flex;flex-direction:column;margin-bottom:12px}
 input,textarea,select{padding:10px;border-radius:8px;border:1px solid #E6E9EE}
 textarea{min-height:120px}
+
+/* Hero CTA кнопки */
+.hero .cta-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap; /* чтобы кнопки переносились на новую строку на маленьких экранах */
+}
+
+@media (max-width:640px){
+  .hero .cta-group {
+    flex-direction: column; /* кнопки вертикально на телефоне */
+    align-items: center;    /* выравнивание по центру */
+    gap: 16px;              /* отступ между кнопками */
+  }
+
+  .hero .cta-group .cta {
+    width: 80%;             /* кнопки растягиваются по ширине экрана телефона */
+    text-align: center;     /* текст по центру */
+    font-size: 16px;        /* можно чуть увеличить для удобства */
+  }
+
+  .hero-left h1 {
+    font-size: 24px;        /* уменьшаем заголовок на телефоне */
+  }
+
+  .hero-left .subtitle {
+    font-size: 14px;        /* уменьшаем подзаголовок */
+  }
+}

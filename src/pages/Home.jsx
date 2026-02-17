@@ -148,6 +148,7 @@ export default function Home() {
               <p className="small">{(u.description || '').slice(0, 120)}...</p>
               <Link to={`/universities/${u.slug}`} className="btn secondary">Подробнее</Link>
             </div>
+            
           ))}
         </div>
       </section>
