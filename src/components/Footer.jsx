@@ -13,6 +13,7 @@ export default function Footer(){
             </div>
           </div>
           <p style={{marginTop:12,color:'rgba(255,255,255,0.85)'}}>Адрес: Бишкек, Кыргызстан</p>
+          <p style={{marginTop:6,color:'rgba(255,255,255,0.85)'}}>Телефон: +996 (312) 45-67-89</p>
           <p style={{marginTop:6,color:'rgba(255,255,255,0.85)'}}>Email: info@globalstep.example</p>
         </div>
 

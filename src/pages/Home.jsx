@@ -14,6 +14,16 @@ export default function Home(){
   return (
     <section>
       <div className="hero">
+        <div style={{width:'100%',marginBottom:18}}>
+          <div style={{background:'white',padding:18,borderRadius:12}}>
+            <h2 style={{margin:'6px 0 8px'}}>Global Step — Твой путь к международным возможностям</h2>
+            <p className="small">Подбор проверенных программ, помощь с документами и поддержка на каждом этапе.</p>
+            <div className="cta-group">
+              <Link to="/programs" className="cta">Смотреть программу</Link>
+              <a className="cta" href="#" onClick={(e)=>{e.preventDefault(); alert('Надёжные программы 2026 — список скоро появится')}}>Надёжные программы 2026</a>
+            </div>
+          </div>
+        </div>
         <div className="hero-left">
           <h1 className="h1">Начни своё обучение за границей уже сегодня</h1>
           <p className="subtitle">Откройте новые возможности: качественное образование, карьера, международный опыт и личностный рост.</p>

@@ -18,7 +18,7 @@ export default function HomeNew(){
           <div style={{flex:1}}>
             <h1 style={{fontSize:36,margin:0,fontWeight:800}}>GlobalStep – Твой путь к международным возможностям</h1>
             <p style={{marginTop:12,opacity:0.95}}>Исследуй обучение за границей, культурные и молодежные программы, стажировки и международные обмены. Подбор программ и поддержка на всех этапах.</p>
-            <div style={{display:'flex',gap:12,marginTop:18}}>
+            <div className="cta-group" style={{marginTop:18}}>
               <Link to="/programs" className="cta">Смотреть программы</Link>
               <Link to="/programs" className="btn" style={{background:'rgba(255,255,255,0.14)'}}>Молодежные программы 2026</Link>
             </div>

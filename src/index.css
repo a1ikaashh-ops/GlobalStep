@@ -30,6 +30,11 @@ a{color:inherit;text-decoration:none}
 .nav a.active{background:var(--brand-blue);color:white;box-shadow:0 6px 18px rgba(59,130,246,0.18)}
 .hamburger{display:none}
 
+/* Mobile menu overlay */
+.mobile-menu-overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.35);display:flex;justify-content:flex-end;z-index:60}
+.mobile-menu{width:260px;background:white;padding:18px;display:flex;flex-direction:column;gap:12px}
+.mobile-menu a{padding:10px;border-radius:8px;color:var(--dark);font-weight:600}
+
 /* Hero */
 .hero{display:flex;gap:32px;align-items:center;padding:48px 0}
 .hero-left{flex:1}
@@ -42,7 +47,7 @@ a{color:inherit;text-decoration:none}
 .feature:hover{transform:translateY(-6px)}
 
 /* Cards */
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .card{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(15,23,42,0.04);transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(15,23,42,0.08)}
 
@@ -110,6 +115,38 @@ a{color:inherit;text-decoration:none}
     .chat-panel{right:8px;left:8px;bottom:16px;width:auto;height:70vh}
     .fab{right:12px;bottom:12px}
   }
+
+/* Chat app layout (sidebar + window) */
+.chat-app{display:flex;height:100%;width:100%;background:white;border-radius:12px;overflow:hidden}
+.chat-sidebar{width:260px;background:#F8FAFC;border-right:1px solid rgba(15,23,42,0.04);padding:12px;display:flex;flex-direction:column;gap:12px}
+.chat-window{flex:1;display:flex;flex-direction:column;position:relative}
+.sidebar-top{display:flex;justify-content:center}
+.sidebar-list{overflow:auto;padding:6px;display:flex;flex-direction:column;gap:8px}
+.chat-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:8px;cursor:pointer}
+.chat-item:hover{background:rgba(59,130,246,0.04)}
+.chat-item.active{background:rgba(59,130,246,0.12);border-left:3px solid var(--brand-blue)}
+.chat-title{font-weight:600}
+.chat-date{color:var(--muted);font-size:12px}
+.icon-delete{background:transparent;border:none;cursor:pointer}
+.new-chat{width:100%;padding:8px;border-radius:8px}
+
+@media (max-width:640px){
+  .chat-app{flex-direction:column;height:70vh}
+  .chat-sidebar{width:100%;display:flex;flex-direction:row;gap:8px;overflow-x:auto;padding:8px}
+  .chat-item{min-width:160px}
+}
+
+@media (max-width:640px){
+  .card-media{height:140px}
+}
+
+/* Hero CTA buttons stacking on mobile */
+.hero .cta-group{display:flex;gap:12px;margin-top:16px}
+.hero .cta-group .cta{flex:0 0 auto}
+@media (max-width:640px){
+  .hero .cta-group{flex-direction:column;align-items:center}
+  .hero .cta{width:100%;text-align:center}
+}
 
 /* Simple fade-in animation */
 .fadeIn{animation:fadeIn .6s ease both}
